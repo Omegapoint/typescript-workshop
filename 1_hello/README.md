@@ -1,0 +1,1 @@
+This exercise is a warm-up to verify that the TypeScript compilator is working and compiling code correctly.

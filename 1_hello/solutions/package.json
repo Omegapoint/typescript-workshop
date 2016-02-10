@@ -1,0 +1,23 @@
+{
+  "name": "typescript-workshop",
+  "version": "1.0.0",
+  "description": "Workshop",
+  "main": "app.js",
+  "dependencies": {
+    "typescript": "^1.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omegapoint/typescript-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omegapoint/typescript-workshop/issues"
+  },
+  "homepage": "https://github.com/Omegapoint/typescript-workshop#readme"
+}
