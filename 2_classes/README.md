@@ -2,7 +2,7 @@
 
 Questions:
 1. How does a class look when compiled into plain JavaScript?
-2. Why is not function overloading allowed in TypeScript?
+2. Why is not function overloading with the same number of parameters allowed in TypeScript?
 3. What is a private constructor parameter compiled into JavaScript? 
 4. Why would you use a private constructor parameter?
 5. Måste man ange typ för en variabel?
