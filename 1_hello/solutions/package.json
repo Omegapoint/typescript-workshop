@@ -1,7 +1,7 @@
 {
   "name": "typescript-workshop",
   "version": "1.0.0",
-  "description": "Workshop",
+  "description": "Hello World",
   "main": "app.js",
   "dependencies": {
     "typescript": "^1.7.5"
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Omegapoint/typescript-workshop.git"
   },
-  "author": "",
+  "author": "Omegapoint AB",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Omegapoint/typescript-workshop/issues"
