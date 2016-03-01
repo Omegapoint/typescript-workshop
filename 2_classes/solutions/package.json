@@ -2,7 +2,7 @@
 {
   "name": "typescript-workshop",
   "version": "1.0.0",
-  "description": "Hello World",
+  "description": "Classes",
   "main": "app.js",
   "dependencies": {
     "typescript": "^1.7.5"
