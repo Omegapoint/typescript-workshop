@@ -1,6 +1,8 @@
 # Exercise 3: Instantition from external data
 In this exercise, we will investigate how classes can be instantiated from external JSON data. The data source will either be a local file or on an external web server. 
 If serving a local file, an HTTP server is needed to serve the content. A simple implementation using python is available by running
+
+##### Web server
 ```sh
 sh server
 ```
