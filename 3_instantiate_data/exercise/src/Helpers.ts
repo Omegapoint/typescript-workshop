@@ -1,11 +1,3 @@
-function ready(fn): void {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-
 function getJSON(uri: URI, fn: any): void {
     var request = new XMLHttpRequest();
     request.open('GET', uri.value, true);

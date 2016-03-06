@@ -1,6 +1,6 @@
-# Exercise 2: Classes
+# Exercise 3: Instantition from external data
 
-Questions:
+## Questions:
 1. How does a class look when compiled into plain JavaScript?
 2. Why is not function overloading allowed in TypeScript?
 3. What is a private constructor parameter compiled into JavaScript? 
