@@ -1,21 +1,30 @@
 module Blog {
     export class ImageArticle implements Article {
         title: string;
-        author: string;
+        author: Author;
         content: string;
         uri: Common.URI;
 
-        constructor(title: string, author: string, content: string, uri: Common.URI) {
+        constructor(title: string, author: Author, content: string, uri: Common.URI) {
             this.title = Validate.notBlank(title);
-            this.author = Validate.notBlank(title);
+            this.author = Validate.notNull(author);
             this.content = Validate.notBlank(title);
             this.uri = Validate.notNull(uri);
         }
 
         static fromJSON(data: any): ImageArticle {
-            let article = <ImageArticle>data; // We dont have any functions in this class, so we can direct cast most fields, except URI
-            article.uri = new Common.URI(data.uri); // So set it explicitly
-            return article;
+            return new ImageArticle(data.title, new Author(data.author), data.content, new Common.URI(data.uri));
+        }
+
+        render(element: HTMLElement) {
+            let article: HTMLElement = document.createElement("article")
+            article.innerHTML =
+                "<h3>" + this.title + "</h3>" +
+                "<p>" + this.author.value + "</p>" +
+                "<span>" + this.content + "</span><br/>" +
+                "<img src=\"" + this.uri.value + "\">";
+
+            element.appendChild(article);
         }
     }
 }

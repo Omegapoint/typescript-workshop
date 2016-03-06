@@ -1,7 +1,9 @@
 module Blog {
     export interface Article {
-        title: string;
-        author: string;
-        content: string;
+        title: string; // Field of type string
+        author: Author; // Field of type Author
+        content: string; // Field of type string
+    
+        render(element: HTMLElement): void; // Method that accepts an HTMLElement variable and returns void
     }
 }

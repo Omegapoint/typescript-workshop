@@ -8,8 +8,9 @@ Common.ready(function() {
     });
 
     function addArticles(articles: Blog.ArticleList) {
-        articles.textArticles.forEach((val, idx) => Common.addTextArticle(val));
-        articles.imageArticles.forEach((val, idx) => Common.addImageArticle(val));
-        articles.videoArticles.forEach((val, idx) => Common.addVideoArticle(val));
+        var articlesElement: HTMLElement = document.getElementById("articles");
+        articles.textArticles.forEach(val => val.render(articlesElement));
+        articles.imageArticles.forEach(val => val.render(articlesElement));
+        articles.videoArticles.forEach(val => val.render(articlesElement));
     }
 });
