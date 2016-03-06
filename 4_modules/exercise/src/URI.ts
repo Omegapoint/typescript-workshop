@@ -1,3 +1,7 @@
 class URI {
-    constructor(public value: string) { }
+    value: string;
+    
+    constructor(value: string) {
+        this.value = value;
+    }
 }

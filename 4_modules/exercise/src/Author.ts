@@ -1,4 +1,4 @@
-class URI {
+class Author {
     value: string;
     
     constructor(value: string) {

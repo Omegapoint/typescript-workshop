@@ -7,7 +7,15 @@ interface Article {
 }
 
 class TextArticle implements Article {
-    constructor(public title: string, public author: string, public content: string) {    }  
+    title: string;
+    author: Author;
+    content: string;
+
+    constructor(title: string, author: Author, content: string) {
+        this.title = title;
+        this.author = author;
+        this.content = content;
+    }
 
     render(element: HTMLElement) {
         let article: HTMLElement = document.createElement("article")
@@ -21,7 +29,9 @@ class TextArticle implements Article {
 }
 
 class ImageArticle implements Article {
-    constructor(public title: string, public author: string, public content: string, public uri: URI) {    }   
+    constructor(public title: string, public author: Author, public content: string, public uri: URI) {
+        // Left empty, automatic mapping using public modifiier in construtor parameters         
+    }
 
     render(element: HTMLElement) {
         let article: HTMLElement = document.createElement("article")
@@ -36,8 +46,22 @@ class ImageArticle implements Article {
 }
 
 class VideoArticle implements Article {
-    constructor(public title: string, public author: string, public content: string, public uri: URI) {    }   
+    title: string;
+    author: Author;
+    content: string;
+
+    constructor(title: string, author: Author, content: string, private uri: URI) {
+        this.title = title;
+        this.author = author;
+        this.content = content;
+        
+        // Semi-automatic mapping. The private variable URI is mapped in parameter list.
+    }
     
+    getURI(): URI {
+        return this.uri;
+    }
+
     render(element: HTMLElement) {
         let article: HTMLElement = document.createElement("article")
         article.innerHTML =

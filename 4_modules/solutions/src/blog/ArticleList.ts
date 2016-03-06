@@ -9,5 +9,9 @@ module Blog {
 
             return new ArticleList(textArticles, imageArticles, videoArticles);
         }
+
+        all(): Array<Article> {
+            return (<Article[]>this.textArticles).concat(this.imageArticles).concat(this.videoArticles);
+        }
     }
 }
