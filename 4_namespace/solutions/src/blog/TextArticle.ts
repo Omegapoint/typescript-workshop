@@ -1,4 +1,4 @@
-module Blog {
+namespace Blog {
     export class TextArticle implements Article {
         title: string;
         author: Author;

@@ -1,4 +1,4 @@
-module Common {
+namespace Common {
     export class URI {
         value: string;
         

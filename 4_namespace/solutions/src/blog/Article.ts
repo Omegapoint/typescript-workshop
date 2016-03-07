@@ -1,4 +1,4 @@
-module Blog {
+namespace Blog {
     export interface Article {
         title: string; // Field of type string
         author: Author; // Field of type Author

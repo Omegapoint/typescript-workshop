@@ -1,4 +1,4 @@
-module Common {
+namespace Common {
     export function ready(fn): void {
         if (document.readyState != 'loading') {
             fn();

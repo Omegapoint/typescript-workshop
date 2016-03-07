@@ -1,4 +1,4 @@
-module Blog {
+namespace Blog {
     export class Author {
         value: string;
 

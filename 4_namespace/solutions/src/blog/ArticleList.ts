@@ -1,4 +1,4 @@
-module Blog {
+namespace Blog {
     export class ArticleList {
         constructor(public textArticles: Array<TextArticle>, public imageArticles: ImageArticle[], public videoArticles: Array<VideoArticle>) { }
 

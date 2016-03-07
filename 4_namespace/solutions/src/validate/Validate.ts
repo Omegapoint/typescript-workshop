@@ -1,4 +1,4 @@
-module Validate {
+namespace Validate {
     export function notNull<T>(val: T, msg?: string): T {
         if (val == null) {
             throw msg ? msg : "Value must not be null";
