@@ -1,0 +1,25 @@
+{
+    "textArticles": [
+        {
+            "title": "My first text article",
+            "author": "Daniel",
+            "content": "This is a text article from a JSON file"
+        }
+    ],
+    "imageArticles": [
+        {
+            "title": "An image article",
+            "author": "John",
+            "content": "My pretty image",
+            "uri": "img/omegapoint.png"
+        }
+    ],
+    "videoArticles": [
+        {
+            "title": "Let's watch a video article",
+            "author": "Jane",
+            "content": "Video json!",
+            "uri": "video/video.mp4"
+        }
+    ]
+}
