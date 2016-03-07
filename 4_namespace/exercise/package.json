@@ -5,7 +5,7 @@
   "description": "Namespaces",
   "main": "app.js",
   "dependencies": {
-    "typescript": "^1.7.5"
+    "typescript": "^1.8.7"
   },
   "devDependencies": {},
   "scripts": {
