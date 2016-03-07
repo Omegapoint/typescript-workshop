@@ -2,7 +2,7 @@
 {
   "name": "typescript-workshop",
   "version": "1.0.0",
-  "description": "Modules",
+  "description": "Namespaces",
   "main": "app.js",
   "dependencies": {
     "typescript": "^1.7.5"
