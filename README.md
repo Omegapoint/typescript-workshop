@@ -10,8 +10,8 @@ Each exercise has it's own folder which in turn consists of two folders **exerci
 Each exercise starts off with the previous exercise solution. So it is highly advised to start from the beginning and take it step by step, or atleast investigate the solutions step by step.
 
 ### Prerequisites
-Some software is needed to perform this lab.
-1. **Editor**. We recommend using *Visual Studio Code* as it is free and has great autocompletion. *IntelliJ* is also a great tool.
+Some software is needed to perform this lab.  
+1. **Editor**. We recommend using *Visual Studio Code* as it is free and has great autocompletion. *IntelliJ* is also a great tool.  
 2. **NodeJS**. NPM (package manager) is needed to get dependencies (compare with Maven or Gradle). Can be downloaded at https://nodejs.org/en/ . Avoid installing using brew/macports etc. as it can lead to permission problems. If NPM is installed correctly, you should be able to run **npm --version** in your terminal/command prompt
 
 ### Optional
