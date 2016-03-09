@@ -4,7 +4,7 @@ If serving a local file, an HTTP server is needed to serve the content. A simple
 
 ##### Web server
 ```sh
-sh server
+sh server.sh
 ```
 or (*start* is defined in packages.json)
 ```sh
@@ -18,7 +18,6 @@ Python needs to be installed with example modules which is preinstalled on Mac O
 ```html
 http://localhost:8000/articles.json
 ```  
-   
 2. Retrieve the JSON data in your TypeScript and log it to the console.
 3. Create a response class, **ArticleList**, which has fields for each article type (arrays).
 4. Add a static method, **fromJSON(...)**, to **ArticleList** which accepts the JSON data and should convert each article type (see step 5)

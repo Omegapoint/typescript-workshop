@@ -3,7 +3,7 @@ In this exercise, we will investigate how classes and methods can divided into e
 The concept is also in EcmaScript 6 and is used when importing external libraries.
 
 External modules needs a module loader in order to be loaded into the browser. There are multiple options to do this. In a NodeJS environment, CommonJS is commonly used. 
-In a browser environment, RequireJS or SystemJS is preferred. Setting up a module system is tedious and we will simplify this process by using Webpack, a bundler.
+In a browser environment, RequireJS or SystemJS is preferred. Setting up a module loading system is tedious and we will simplify this process by using Webpack, a bundler.
 
 ##### Webpack
 Webpack is a bundle software that concatenates files into one single file. Beside the bundling part, Webpack can also add loading code for modules, which removes the need for configuring a module loader.
@@ -24,7 +24,7 @@ Webpack is configured using a webpack.config.js file. Please have a look inside 
 
 As in exercise 3, the data will be loaded from JSON. This requires a web server to be running, which can be done as below
 ```sh
-sh server
+sh server.sh
 ```
 or (*start* is defined in packages.json)
 ```sh

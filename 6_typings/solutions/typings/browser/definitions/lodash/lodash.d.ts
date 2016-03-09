@@ -3430,7 +3430,7 @@ module _ {
          */
         sortedLastIndex<TSort>(
             value: T
-        ): LoDashExplicitWrapper<number>;
+        ): LoDashExplicitWrapper<number>;       
 
         /**
          * @see _.sortedLastIndex

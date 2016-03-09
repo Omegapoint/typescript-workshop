@@ -1,4 +1,4 @@
-function getJSON(uri: URI, fn: any): void {
+function getJSON(uri: URI, fn: (data: any) => void): void {
     var request = new XMLHttpRequest();
     request.open('GET', uri.value, true);
 
