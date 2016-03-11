@@ -3,12 +3,13 @@ In this exercise, we will investigate how classes can be instantiated from exter
 If serving a local file, an HTTP server is needed to serve the content. A simple implementation using python is available by running
 
 ##### Web server
+You can either retrieve JSON data from an external source (https://s3-eu-west-1.amazonaws.com/typescript-workshop/articles.json) 
+```javascript
+getJSON(new URI("https://s3-eu-west-1.amazonaws.com/typescript-workshop/articles.json"), data => { .. });
+```  
+or using a local server    
 ```sh
 sh server.sh
-```
-or (*start* is defined in packages.json)
-```sh
-npm start
 ```
 Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
 

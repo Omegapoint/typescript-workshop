@@ -10,18 +10,16 @@ In this exercise, we will use the library **lodash** which has nice helper funct
 We will continue using external modules as it is required to load external libraries. Hence, we will also continue using **Webpack** instead of the **tsc** compiler.
 Remember the *watch* functionality which can be used as **webpack -w**.
 
-##### Web server
-
+##### Web server  
 As in exercise 3, the data will be loaded from JSON. This requires a web server to be running, which can be done as below
+```javascript
+getJSON(new URI("https://s3-eu-west-1.amazonaws.com/typescript-workshop/articles.json"), data => { .. });
+```  
+or using a local server    
 ```sh
-sh server
+sh server.sh
 ```
-or (*start* is defined in packages.json)
-```sh
-npm start
-```
-Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. 
-Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
+Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
 
 ## Steps:
 1. Install Typings globally using npm

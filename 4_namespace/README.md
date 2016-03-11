@@ -3,15 +3,14 @@ In this exercise, we will investigate how classes and methods can divided into n
 
 A namespace is also formely known as an internal module. As the keyword module was easily confused with external modules (next exercise), it was decided to change the keyword to namespace. Older tutorials/guides will still however use the old term internal module.
 
-##### Web server
-
+##### Web server  
 As in exercise 3, the data will be loaded from JSON. This requires a web server to be running, which can be done as below
+```javascript
+getJSON(new URI("https://s3-eu-west-1.amazonaws.com/typescript-workshop/articles.json"), data => { .. });
+```  
+or using a local server    
 ```sh
-sh server
-```
-or (*start* is defined in packages.json)
-```sh
-npm start
+sh server.sh
 ```
 Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
 

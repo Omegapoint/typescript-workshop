@@ -20,18 +20,16 @@ npm install ts-loader --save-dev
 ``` 
 Webpack is configured using a webpack.config.js file. Please have a look inside it and figure out what it does. 
 
-##### Web server
-
+##### Web server  
 As in exercise 3, the data will be loaded from JSON. This requires a web server to be running, which can be done as below
+```javascript
+getJSON(new URI("https://s3-eu-west-1.amazonaws.com/typescript-workshop/articles.json"), data => { .. });
+```  
+or using a local server    
 ```sh
 sh server.sh
 ```
-or (*start* is defined in packages.json)
-```sh
-npm start
-```
-Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. 
-Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
+Python needs to be installed with example modules which is preinstalled on Mac OSX but not on Windows. Windows requires could either install python 2.7 with examples or using an external data source instead (provided at workshop)
 
 ##### Bundling
 We will continue using bundling as described in exercise 4. The starting point of this exercise already have bundling activated.
