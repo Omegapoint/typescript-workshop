@@ -5,11 +5,13 @@ This exercise is a warm-up to verify that the TypeScript compilator is working a
 #### Steps needed
 1. You will work in the **exercise** folder. An index.html already exists where the scripts should be loaded and alter the DOM-tree.
 2. Create a source folder for TypeScript source code
-3. Create a npm package file to include TypeScript dependencies (package.json). Use **npm init**. TypeScript can be installed using 
+3. Create a npm package file to include TypeScript dependencies (package.json). Use **npm init**. TypeScript can be installed using  
+
    ```sh
    npm install typescript -g --save-dev
    ```
-4. Create a TypeScript config file (tsconfig.json). The output should be put in a 'js' folder. **Note** that node_modules need to be excluded. 
+4. Create a TypeScript config file (tsconfig.json). The output should be put in a 'js' folder. **Note** that node_modules need to be excluded.  
+
   ```sh
     {
         "compilerOptions": {
